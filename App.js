@@ -2,10 +2,15 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
+import Conversor from './src/conversor/index'
+
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+        <Conversor moedaA="USD" moedaB="BRL" />
+
+        <Conversor moedaA="BRL" moedaB="USD" />
+
       <StatusBar style="auto" />
     </View>
   );
